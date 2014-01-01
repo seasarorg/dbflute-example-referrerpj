@@ -1,0 +1,5 @@
+map:{
+    ; $white_all_in_one_cls_comp_whi = white_all_in_one_cls_compound_pk_ref
+    ; $white_all_in_one_cls_norm_whi = white_all_in_one_cls_normal_col_ref
+    ; $white_the_long_and_windin_whi = white_the_long_and_winding_table_and_column
+}

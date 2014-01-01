@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR2.1//DTD S2Container//EN"
+    "http://www.seasar.org/dtd/components21.dtd">
+
+<components>
+
+    <!-- The components of Behavior as implementation of an application . -->
+    <component name="memberBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.MemberBhvAp"/>
+    <component name="memberAddressBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.MemberAddressBhvAp"/>
+    <component name="memberLoginBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.MemberLoginBhvAp"/>
+    <component name="memberSecurityBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.MemberSecurityBhvAp"/>
+    <component name="memberServiceBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.MemberServiceBhvAp"/>
+    <component name="memberStatusBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.MemberStatusBhvAp"/>
+    <component name="memberWithdrawalBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.MemberWithdrawalBhvAp"/>
+    <component name="productBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.ProductBhvAp"/>
+    <component name="productCategoryBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.ProductCategoryBhvAp"/>
+    <component name="productStatusBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.ProductStatusBhvAp"/>
+    <component name="purchaseBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.PurchaseBhvAp"/>
+    <component name="regionBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.RegionBhvAp"/>
+    <component name="serviceRankBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.ServiceRankBhvAp"/>
+    <component name="vendorCheckBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorCheckBhvAp"/>
+    <component name="vendorConstraintNameAutoBarBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorConstraintNameAutoBarBhvAp"/>
+    <component name="vendorConstraintNameAutoFooBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorConstraintNameAutoFooBhvAp"/>
+    <component name="vendorConstraintNameAutoQuxBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorConstraintNameAutoQuxBhvAp"/>
+    <component name="vendorConstraintNameAutoRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorConstraintNameAutoRefBhvAp"/>
+    <component name="vendorLargeDataBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorLargeDataBhvAp"/>
+    <component name="vendorLargeDataRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorLargeDataRefBhvAp"/>
+    <component name="vendorTheLongAndWindingTableAndColumnBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorTheLongAndWindingTableAndColumnBhvAp"/>
+    <component name="vendorTheLongAndWindingTableAndColumnRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorTheLongAndWindingTableAndColumnRefBhvAp"/>
+    <component name="whiteAllInOneClsCategoryBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteAllInOneClsCategoryBhvAp"/>
+    <component name="whiteAllInOneClsCompoundPkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteAllInOneClsCompoundPkRefBhvAp"/>
+    <component name="whiteAllInOneClsElementBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteAllInOneClsElementBhvAp"/>
+    <component name="whiteAllInOneClsNormalColRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteAllInOneClsNormalColRefBhvAp"/>
+    <component name="whiteBinaryBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteBinaryBhvAp"/>
+    <component name="whiteColumnExceptBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteColumnExceptBhvAp"/>
+    <component name="whiteColumnExceptGenOnlyBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteColumnExceptGenOnlyBhvAp"/>
+    <component name="whiteCompoundPkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundPkBhvAp"/>
+    <component name="whiteCompoundPkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundPkRefBhvAp"/>
+    <component name="whiteCompoundPkRefNestBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundPkRefNestBhvAp"/>
+    <component name="whiteDbCommentBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDbCommentBhvAp"/>
+    <component name="whiteDelimiterBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDelimiterBhvAp"/>
+    <component name="whiteDeprecatedClsElementBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDeprecatedClsElementBhvAp"/>
+    <component name="whiteEscapedDfpropBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteEscapedDfpropBhvAp"/>
+    <component name="whiteEscapedJavaDocBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteEscapedJavaDocBhvAp"/>
+    <component name="whiteImplicitConvIntegerBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitConvIntegerBhvAp"/>
+    <component name="whiteImplicitConvNumericBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitConvNumericBhvAp"/>
+    <component name="whiteImplicitConvStringBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitConvStringBhvAp"/>
+    <component name="whiteImplicitReverseFkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitReverseFkBhvAp"/>
+    <component name="whiteImplicitReverseFkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitReverseFkRefBhvAp"/>
+    <component name="whiteImplicitReverseFkSuppressBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitReverseFkSuppressBhvAp"/>
+    <component name="whiteLineSepCommentBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteLineSepCommentBhvAp"/>
+    <component name="whiteLoadDataBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteLoadDataBhvAp"/>
+    <component name="whiteMyselfBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteMyselfBhvAp"/>
+    <component name="whiteMyselfCheckBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteMyselfCheckBhvAp"/>
+    <component name="whiteNoPkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteNoPkBhvAp"/>
+    <component name="whitePgReservBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePgReservBhvAp"/>
+    <component name="whitePgReservRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePgReservRefBhvAp"/>
+    <component name="whitePurchaseReferrerBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePurchaseReferrerBhvAp"/>
+    <component name="whiteQuotedBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteQuotedBhvAp"/>
+    <component name="whiteQuotedRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteQuotedRefBhvAp"/>
+    <component name="whiteSelfReferenceBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSelfReferenceBhvAp"/>
+    <component name="whiteSelfReferenceRefOneBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSelfReferenceRefOneBhvAp"/>
+    <component name="whiteSplitMultipleFkBaseBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSplitMultipleFkBaseBhvAp"/>
+    <component name="whiteSplitMultipleFkChildBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSplitMultipleFkChildBhvAp"/>
+    <component name="whiteSplitMultipleFkNextBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSplitMultipleFkNextBhvAp"/>
+    <component name="whiteSplitMultipleFkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSplitMultipleFkRefBhvAp"/>
+    <component name="whiteSuppressDefCheckBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressDefCheckBhvAp"/>
+    <component name="whiteTableExceptGenHeadBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteTableExceptGenHeadBhvAp"/>
+    <component name="whiteTableExceptGenRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteTableExceptGenRefBhvAp"/>
+    <component name="whiteUqReferenceBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqReferenceBhvAp"/>
+    <component name="whiteUqReferenceRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqReferenceRefBhvAp"/>
+    <component name="whiteUqReferenceRefNestBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqReferenceRefNestBhvAp"/>
+    <component name="whiteVariantRelationMasterBarBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterBarBhvAp"/>
+    <component name="whiteVariantRelationMasterCorgeBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterCorgeBhvAp"/>
+    <component name="whiteVariantRelationMasterFooBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterFooBhvAp"/>
+    <component name="whiteVariantRelationMasterQuxBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterQuxBhvAp"/>
+    <component name="whiteVariantRelationReferrerBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationReferrerBhvAp"/>
+    <component name="whiteXlsManBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteXlsManBhvAp"/>
+    <component name="withdrawalReasonBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WithdrawalReasonBhvAp"/>
+    <component name="summaryProductBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.SummaryProductBhvAp"/>
+    <component name="summaryWithdrawalBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.SummaryWithdrawalBhvAp"/>
+    <component name="whiteNoPkRelationBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteNoPkRelationBhvAp"/>
+    <component name="nextSchemaProductBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.NextSchemaProductBhvAp"/>
+    <component name="whiteAdditionalBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteAdditionalBhvAp"/>
+</components>
