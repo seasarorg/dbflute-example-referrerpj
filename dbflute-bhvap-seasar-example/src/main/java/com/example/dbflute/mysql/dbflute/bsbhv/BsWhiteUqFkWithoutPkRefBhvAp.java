@@ -15,10 +15,10 @@
  */
 package com.example.dbflute.mysql.dbflute.bsbhv;
 
-import com.example.dbflute.mysql.dbflute.exbhv.WhiteUqReferenceRefNestBhv;
+import com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkWithoutPkRefBhv;
 
 /**
- * The base behavior of white_uq_reference_ref_nest as implementation of an application.
+ * The base behavior of white_uq_fk_without_pk_ref as implementation of an application.
  * <p>
  * You can NOT implement your original methods here.
  * This class is overridden when re-generating.
@@ -26,7 +26,7 @@ import com.example.dbflute.mysql.dbflute.exbhv.WhiteUqReferenceRefNestBhv;
  * </p>
  * @author DBFlute(AutoGenerator)
  */
-public class BsWhiteUqReferenceRefNestBhvAp extends WhiteUqReferenceRefNestBhv {
+public class BsWhiteUqFkWithoutPkRefBhvAp extends WhiteUqFkWithoutPkRefBhv {
 
     // ===================================================================================
     //                                                                          Definition

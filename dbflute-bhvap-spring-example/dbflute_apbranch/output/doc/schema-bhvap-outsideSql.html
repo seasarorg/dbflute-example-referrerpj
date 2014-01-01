@@ -64,7 +64,7 @@ h4 {
 	font-size: 0.9em;
 	color: #114488;
 }
-#suggestion-list {
+.suggestionarea {
 	padding: 0 0.2em 0.2em 0.2em;
 	margin: 0;
 	position: absolute;
@@ -262,6 +262,7 @@ dl.procedurelist dd.column pre {
 <h2>Table List</h2>
 <div class="keywordsearch">
 	<input type="text" id="incremental-search-field" tabindex=1 value="" placeholder="Table Search" />
+	<ul id="suggestion-list" class="suggestionarea"></ul>
 	<span class="searchmemo">*Push 'tab' (primary tab order)</span>
 </div>
 <table summary="Tables in the Schema">
@@ -447,7 +448,7 @@ dl.procedurelist dd.column pre {
 	<tr>
 		<td class="rownumcell">16</td>
 		<td class="aliascell"></td>
-		<td><a href="#vendor_check" title="type=TABLE, primaryKey={vendor_check_id}, nameLength=12, columnCount=25">vendor_check</a></td>
+		<td><a href="#vendor_check" title="type=TABLE, primaryKey={vendor_check_id}, nameLength=12, columnCount=27">vendor_check</a></td>
 		<td class="typecell">TABLE</td>
 		<td class="schemacell"> public</td>
 		<td class="relcell">&nbsp;</td>
@@ -3093,7 +3094,7 @@ vendor_$_dollar
 		<td class="subcell">String</td>
 	</tr>
 </table>
-  <h2 id="vendor_check" title="type=TABLE, primaryKey={vendor_check_id}, nameLength=12, columnCount=25">
+  <h2 id="vendor_check" title="type=TABLE, primaryKey={vendor_check_id}, nameLength=12, columnCount=27">
 vendor_check
 &nbsp;<span class="tableschema">on public</span>
 </h2>
@@ -3346,6 +3347,40 @@ vendor_check
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="aliascell"></td>
+		<td id="vendor_check_type_of_real">type_of_real</td>
+		<td class="typecell">float4</td>
+		<td class="sizecell"> 8, 8 </td>
+		<td class="relcell">&nbsp;&nbsp;</td>
+		<td class="relcell">&nbsp;</td>
+		<td class="relcell"> &nbsp;</td>
+		<td class="subcell">typeOfReal</td>
+		<td class="subcell">BigDecimal</td>
+	</tr>
+	<tr>
+		<td class="rownumcell">15</td>
+		<td class="flgcell">&nbsp;</td>
+		<td class="flgcell"> &nbsp;</td>
+		<td class="flgcell">&nbsp;</td>
+		<td class="flgcell">&nbsp;</td>
+		<td class="flgcell"> &nbsp;</td>
+		<td class="aliascell"></td>
+		<td id="vendor_check_type_of_float">type_of_float</td>
+		<td class="typecell">float8</td>
+		<td class="sizecell"> 17, 17 </td>
+		<td class="relcell">&nbsp;&nbsp;</td>
+		<td class="relcell">&nbsp;</td>
+		<td class="relcell"> &nbsp;</td>
+		<td class="subcell">typeOfFloat</td>
+		<td class="subcell">BigDecimal</td>
+	</tr>
+	<tr>
+		<td class="rownumcell">16</td>
+		<td class="flgcell">&nbsp;</td>
+		<td class="flgcell"> &nbsp;</td>
+		<td class="flgcell">&nbsp;</td>
+		<td class="flgcell">&nbsp;</td>
+		<td class="flgcell"> &nbsp;</td>
+		<td class="aliascell"></td>
 		<td id="vendor_check_type_of_money">type_of_money</td>
 		<td class="typecell">money</td>
 		<td class="sizecell"> 2147483647 </td>
@@ -3356,7 +3391,7 @@ vendor_check
 		<td class="subcell">BigDecimal</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">15</td>
+		<td class="rownumcell">17</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -3373,7 +3408,7 @@ vendor_check
 		<td class="subcell">Date</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">16</td>
+		<td class="rownumcell">18</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -3390,7 +3425,7 @@ vendor_check
 		<td class="subcell">Timestamp</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">17</td>
+		<td class="rownumcell">19</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -3407,7 +3442,7 @@ vendor_check
 		<td class="subcell">Time</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">18</td>
+		<td class="rownumcell">20</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -3424,7 +3459,7 @@ vendor_check
 		<td class="subcell">Time</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">19</td>
+		<td class="rownumcell">21</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -3441,7 +3476,7 @@ vendor_check
 		<td class="subcell">String</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">20</td>
+		<td class="rownumcell">22</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -3458,7 +3493,7 @@ vendor_check
 		<td class="subcell">Boolean</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">21</td>
+		<td class="rownumcell">23</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -3475,7 +3510,7 @@ vendor_check
 		<td class="subcell">Boolean</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">22</td>
+		<td class="rownumcell">24</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -3492,7 +3527,7 @@ vendor_check
 		<td class="subcell">byte[]</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">23</td>
+		<td class="rownumcell">25</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -3509,7 +3544,7 @@ vendor_check
 		<td class="subcell">byte[]</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">24</td>
+		<td class="rownumcell">26</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -3526,7 +3561,7 @@ vendor_check
 		<td class="subcell">UUID</td>
 	</tr>
 	<tr>
-		<td class="rownumcell">25</td>
+		<td class="rownumcell">27</td>
 		<td class="flgcell">&nbsp;</td>
 		<td class="flgcell"> &nbsp;</td>
 		<td class="flgcell">&nbsp;</td>
@@ -5190,12 +5225,10 @@ Incremental.prototype = {
 	 */
 	buildSuggestList: function () {
 		var fragment = document.createDocumentFragment(),
-			ul = document.createElement('ul'),
+			ul = document.getElementById('suggestion-list'),
 			li, anchor;
 
-		ul.id = 'suggestion-list';
 		this.ul = ul;
-
 		for (var i = 0, max = this.distDataList.length; i < max; i++) {
 			li = document.createElement('li');
 			li.style.display = 'none';
@@ -5215,7 +5248,6 @@ Incremental.prototype = {
 		}
 		ul.appendChild(fragment);
 
-		this.targetParent.appendChild(ul);
 		this.attachSuggestionEvent();
 	},
 

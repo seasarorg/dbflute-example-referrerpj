@@ -18,6 +18,8 @@
     <component name="purchaseBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.PurchaseBhvAp"/>
     <component name="regionBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.RegionBhvAp"/>
     <component name="serviceRankBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.ServiceRankBhvAp"/>
+    <component name="summaryProductBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.SummaryProductBhvAp"/>
+    <component name="summaryWithdrawalBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.SummaryWithdrawalBhvAp"/>
     <component name="vendorCheckBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorCheckBhvAp"/>
     <component name="vendorConstraintNameAutoBarBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorConstraintNameAutoBarBhvAp"/>
     <component name="vendorConstraintNameAutoFooBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.VendorConstraintNameAutoFooBhvAp"/>
@@ -53,6 +55,7 @@
     <component name="whiteMyselfBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteMyselfBhvAp"/>
     <component name="whiteMyselfCheckBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteMyselfCheckBhvAp"/>
     <component name="whiteNoPkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteNoPkBhvAp"/>
+    <component name="whiteNoPkRelationBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteNoPkRelationBhvAp"/>
     <component name="whitePgReservBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePgReservBhvAp"/>
     <component name="whitePgReservRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePgReservRefBhvAp"/>
     <component name="whitePurchaseReferrerBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePurchaseReferrerBhvAp"/>
@@ -67,9 +70,11 @@
     <component name="whiteSuppressDefCheckBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressDefCheckBhvAp"/>
     <component name="whiteTableExceptGenHeadBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteTableExceptGenHeadBhvAp"/>
     <component name="whiteTableExceptGenRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteTableExceptGenRefBhvAp"/>
-    <component name="whiteUqReferenceBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqReferenceBhvAp"/>
-    <component name="whiteUqReferenceRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqReferenceRefBhvAp"/>
-    <component name="whiteUqReferenceRefNestBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqReferenceRefNestBhvAp"/>
+    <component name="whiteUqFkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkBhvAp"/>
+    <component name="whiteUqFkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkRefBhvAp"/>
+    <component name="whiteUqFkRefNestBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkRefNestBhvAp"/>
+    <component name="whiteUqFkWithoutPkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkWithoutPkBhvAp"/>
+    <component name="whiteUqFkWithoutPkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkWithoutPkRefBhvAp"/>
     <component name="whiteVariantRelationMasterBarBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterBarBhvAp"/>
     <component name="whiteVariantRelationMasterCorgeBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterCorgeBhvAp"/>
     <component name="whiteVariantRelationMasterFooBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterFooBhvAp"/>
@@ -77,9 +82,6 @@
     <component name="whiteVariantRelationReferrerBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationReferrerBhvAp"/>
     <component name="whiteXlsManBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteXlsManBhvAp"/>
     <component name="withdrawalReasonBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WithdrawalReasonBhvAp"/>
-    <component name="summaryProductBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.SummaryProductBhvAp"/>
-    <component name="summaryWithdrawalBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.SummaryWithdrawalBhvAp"/>
-    <component name="whiteNoPkRelationBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteNoPkRelationBhvAp"/>
     <component name="nextSchemaProductBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.NextSchemaProductBhvAp"/>
     <component name="whiteAdditionalBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteAdditionalBhvAp"/>
 </components>
