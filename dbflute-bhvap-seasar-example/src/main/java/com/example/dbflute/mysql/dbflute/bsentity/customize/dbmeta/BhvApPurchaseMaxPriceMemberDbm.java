@@ -58,20 +58,20 @@ public class BhvApPurchaseMaxPriceMemberDbm extends AbstractDBMeta {
     public PropertyGateway findPropertyGateway(String propertyName)
     { return doFindEpg(_epgMap, propertyName); }
     public static class EpgMemberId implements PropertyGateway {
-        public Object read(Entity e) { return ((BhvApPurchaseMaxPriceMember)e).getMemberId(); }
-        public void write(Entity e, Object v) { ((BhvApPurchaseMaxPriceMember)e).setMemberId(cti(v)); }
+        public Object read(Entity et) { return ((BhvApPurchaseMaxPriceMember)et).getMemberId(); }
+        public void write(Entity et, Object vl) { ((BhvApPurchaseMaxPriceMember)et).setMemberId(cti(vl)); }
     }
     public static class EpgMemberName implements PropertyGateway {
-        public Object read(Entity e) { return ((BhvApPurchaseMaxPriceMember)e).getMemberName(); }
-        public void write(Entity e, Object v) { ((BhvApPurchaseMaxPriceMember)e).setMemberName((String)v); }
+        public Object read(Entity et) { return ((BhvApPurchaseMaxPriceMember)et).getMemberName(); }
+        public void write(Entity et, Object vl) { ((BhvApPurchaseMaxPriceMember)et).setMemberName((String)vl); }
     }
     public static class EpgPurchaseMaxPrice implements PropertyGateway {
-        public Object read(Entity e) { return ((BhvApPurchaseMaxPriceMember)e).getPurchaseMaxPrice(); }
-        public void write(Entity e, Object v) { ((BhvApPurchaseMaxPriceMember)e).setPurchaseMaxPrice(cti(v)); }
+        public Object read(Entity et) { return ((BhvApPurchaseMaxPriceMember)et).getPurchaseMaxPrice(); }
+        public void write(Entity et, Object vl) { ((BhvApPurchaseMaxPriceMember)et).setPurchaseMaxPrice(cti(vl)); }
     }
     public static class EpgMemberStatusName implements PropertyGateway {
-        public Object read(Entity e) { return ((BhvApPurchaseMaxPriceMember)e).getMemberStatusName(); }
-        public void write(Entity e, Object v) { ((BhvApPurchaseMaxPriceMember)e).setMemberStatusName((String)v); }
+        public Object read(Entity et) { return ((BhvApPurchaseMaxPriceMember)et).getMemberStatusName(); }
+        public void write(Entity et, Object vl) { ((BhvApPurchaseMaxPriceMember)et).setMemberStatusName((String)vl); }
     }
 
     // ===================================================================================
@@ -89,7 +89,7 @@ public class BhvApPurchaseMaxPriceMemberDbm extends AbstractDBMeta {
     //                                                                         Column Info
     //                                                                         ===========
     protected final ColumnInfo _columnMemberId = cci("MEMBER_ID", "MEMBER_ID", null, "会員ID", false, "memberId", Integer.class, false, false, "INT", 11, 0, null, false, null, "会員を識別するID。連番として基本的に自動採番される。\n（会員IDだけに限らず）採番方法はDBMSによって変わる。", null, null, null);
-    protected final ColumnInfo _columnMemberName = cci("MEMBER_NAME", "MEMBER_NAME", null, "会員名称", false, "memberName", String.class, false, false, "VARCHAR", 200, 0, null, false, null, "会員のフルネームの名称。", null, null, null);
+    protected final ColumnInfo _columnMemberName = cci("MEMBER_NAME", "MEMBER_NAME", null, "会員名称", false, "memberName", String.class, false, false, "VARCHAR", 180, 0, null, false, null, "会員のフルネームの名称。", null, null, null);
     protected final ColumnInfo _columnPurchaseMaxPrice = cci("PURCHASE_MAX_PRICE", "PURCHASE_MAX_PRICE", null, null, false, "purchaseMaxPrice", Integer.class, false, false, "INT", 11, 0, null, false, null, null, null, null, null);
     protected final ColumnInfo _columnMemberStatusName = cci("MEMBER_STATUS_NAME", "MEMBER_STATUS_NAME", null, "会員ステータス名称", false, "memberStatusName", String.class, false, false, "VARCHAR", 50, 0, null, false, null, null, null, null, null);
 
@@ -157,10 +157,10 @@ public class BhvApPurchaseMaxPriceMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                   Map Communication
     //                                                                   =================
-    public void acceptPrimaryKeyMap(Entity e, Map<String, ? extends Object> m)
-    { doAcceptPrimaryKeyMap((BhvApPurchaseMaxPriceMember)e, m); }
-    public void acceptAllColumnMap(Entity e, Map<String, ? extends Object> m)
-    { doAcceptAllColumnMap((BhvApPurchaseMaxPriceMember)e, m); }
-    public Map<String, Object> extractPrimaryKeyMap(Entity e) { return doExtractPrimaryKeyMap(e); }
-    public Map<String, Object> extractAllColumnMap(Entity e) { return doExtractAllColumnMap(e); }
+    public void acceptPrimaryKeyMap(Entity et, Map<String, ? extends Object> mp)
+    { doAcceptPrimaryKeyMap((BhvApPurchaseMaxPriceMember)et, mp); }
+    public void acceptAllColumnMap(Entity et, Map<String, ? extends Object> mp)
+    { doAcceptAllColumnMap((BhvApPurchaseMaxPriceMember)et, mp); }
+    public Map<String, Object> extractPrimaryKeyMap(Entity et) { return doExtractPrimaryKeyMap(et); }
+    public Map<String, Object> extractAllColumnMap(Entity et) { return doExtractAllColumnMap(et); }
 }

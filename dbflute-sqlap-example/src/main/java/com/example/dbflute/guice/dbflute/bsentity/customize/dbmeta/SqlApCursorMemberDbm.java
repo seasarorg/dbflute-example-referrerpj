@@ -44,24 +44,24 @@ public class SqlApCursorMemberDbm extends AbstractDBMeta {
     public PropertyGateway findPropertyGateway(String propertyName)
     { return doFindEpg(_epgMap, propertyName); }
     public static class EpgMemberId implements PropertyGateway {
-        public Object read(Entity e) { return ((SqlApCursorMember)e).getMemberId(); }
-        public void write(Entity e, Object v) { ((SqlApCursorMember)e).setMemberId(cti(v)); }
+        public Object read(Entity et) { return ((SqlApCursorMember)et).getMemberId(); }
+        public void write(Entity et, Object vl) { ((SqlApCursorMember)et).setMemberId(cti(vl)); }
     }
     public static class EpgMemberName implements PropertyGateway {
-        public Object read(Entity e) { return ((SqlApCursorMember)e).getMemberName(); }
-        public void write(Entity e, Object v) { ((SqlApCursorMember)e).setMemberName((String)v); }
+        public Object read(Entity et) { return ((SqlApCursorMember)et).getMemberName(); }
+        public void write(Entity et, Object vl) { ((SqlApCursorMember)et).setMemberName((String)vl); }
     }
     public static class EpgBirthdate implements PropertyGateway {
-        public Object read(Entity e) { return ((SqlApCursorMember)e).getBirthdate(); }
-        public void write(Entity e, Object v) { ((SqlApCursorMember)e).setBirthdate((java.util.Date)v); }
+        public Object read(Entity et) { return ((SqlApCursorMember)et).getBirthdate(); }
+        public void write(Entity et, Object vl) { ((SqlApCursorMember)et).setBirthdate((java.util.Date)vl); }
     }
     public static class EpgFormalizedDatetime implements PropertyGateway {
-        public Object read(Entity e) { return ((SqlApCursorMember)e).getFormalizedDatetime(); }
-        public void write(Entity e, Object v) { ((SqlApCursorMember)e).setFormalizedDatetime((java.sql.Timestamp)v); }
+        public Object read(Entity et) { return ((SqlApCursorMember)et).getFormalizedDatetime(); }
+        public void write(Entity et, Object vl) { ((SqlApCursorMember)et).setFormalizedDatetime((java.sql.Timestamp)vl); }
     }
     public static class EpgPurchaseSummary implements PropertyGateway {
-        public Object read(Entity e) { return ((SqlApCursorMember)e).getPurchaseSummary(); }
-        public void write(Entity e, Object v) { ((SqlApCursorMember)e).setPurchaseSummary(ctl(v)); }
+        public Object read(Entity et) { return ((SqlApCursorMember)et).getPurchaseSummary(); }
+        public void write(Entity et, Object vl) { ((SqlApCursorMember)et).setPurchaseSummary(ctl(vl)); }
     }
 
     // ===================================================================================
@@ -150,10 +150,10 @@ public class SqlApCursorMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                   Map Communication
     //                                                                   =================
-    public void acceptPrimaryKeyMap(Entity e, Map<String, ? extends Object> m)
-    { doAcceptPrimaryKeyMap((SqlApCursorMember)e, m); }
-    public void acceptAllColumnMap(Entity e, Map<String, ? extends Object> m)
-    { doAcceptAllColumnMap((SqlApCursorMember)e, m); }
-    public Map<String, Object> extractPrimaryKeyMap(Entity e) { return doExtractPrimaryKeyMap(e); }
-    public Map<String, Object> extractAllColumnMap(Entity e) { return doExtractAllColumnMap(e); }
+    public void acceptPrimaryKeyMap(Entity et, Map<String, ? extends Object> mp)
+    { doAcceptPrimaryKeyMap((SqlApCursorMember)et, mp); }
+    public void acceptAllColumnMap(Entity et, Map<String, ? extends Object> mp)
+    { doAcceptAllColumnMap((SqlApCursorMember)et, mp); }
+    public Map<String, Object> extractPrimaryKeyMap(Entity et) { return doExtractPrimaryKeyMap(et); }
+    public Map<String, Object> extractAllColumnMap(Entity et) { return doExtractAllColumnMap(et); }
 }

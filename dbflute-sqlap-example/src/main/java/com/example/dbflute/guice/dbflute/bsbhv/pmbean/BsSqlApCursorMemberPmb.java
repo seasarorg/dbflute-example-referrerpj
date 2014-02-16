@@ -185,6 +185,14 @@ public class BsSqlApCursorMemberPmb implements CursorHandlingPmb<MemberBhv, Void
     }
 
     /**
+     * [set] memberStatusCode:cls(MemberStatus) <br />
+     * @param memberStatusCode The value of memberStatusCode. (NullAllowed)
+     */
+    public void setMemberStatusCode(String memberStatusCode) {
+        _memberStatusCode = memberStatusCode;
+    }
+
+    /**
      * [set as Formalized] memberStatusCode:cls(MemberStatus) <br />
      * as formal member, allowed to use all service
      */

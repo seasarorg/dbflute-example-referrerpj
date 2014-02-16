@@ -5,7 +5,7 @@ import com.example.dbflute.guice.dbflute.bsbhv.pmbean.BsSqlApSubDirectoryCheckPm
 /**
  * <!-- df:beginClassDescription -->
  * The typed parameter-bean of SqlApSubDirectoryCheck. <span style="color: #AD4747">(typed to list, entity)</span><br />
- * This is related to "<span style="color: #AD4747">subdirectory:selectSqlApSubDirectoryCheck</span>" on MemberBhv.
+ * This is related to "<span style="color: #AD4747">subdirectory:selectSqlApSubDirectoryCheck</span>" on MemberBhv. <br />
  * <!-- df:endClassDescription -->
  * <p>
  * You can implement your original methods here.

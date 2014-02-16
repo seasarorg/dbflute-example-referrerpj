@@ -57,16 +57,16 @@ public class AppPlainMemberDbm extends AbstractDBMeta {
     public PropertyGateway findPropertyGateway(String propertyName)
     { return doFindEpg(_epgMap, propertyName); }
     public static class EpgMemberId implements PropertyGateway {
-        public Object read(Entity e) { return ((AppPlainMember)e).getMemberId(); }
-        public void write(Entity e, Object v) { ((AppPlainMember)e).setMemberId(cti(v)); }
+        public Object read(Entity et) { return ((AppPlainMember)et).getMemberId(); }
+        public void write(Entity et, Object vl) { ((AppPlainMember)et).setMemberId(cti(vl)); }
     }
     public static class EpgMemberName implements PropertyGateway {
-        public Object read(Entity e) { return ((AppPlainMember)e).getMemberName(); }
-        public void write(Entity e, Object v) { ((AppPlainMember)e).setMemberName((String)v); }
+        public Object read(Entity et) { return ((AppPlainMember)et).getMemberName(); }
+        public void write(Entity et, Object vl) { ((AppPlainMember)et).setMemberName((String)vl); }
     }
     public static class EpgMemberStatusName implements PropertyGateway {
-        public Object read(Entity e) { return ((AppPlainMember)e).getMemberStatusName(); }
-        public void write(Entity e, Object v) { ((AppPlainMember)e).setMemberStatusName((String)v); }
+        public Object read(Entity et) { return ((AppPlainMember)et).getMemberStatusName(); }
+        public void write(Entity et, Object vl) { ((AppPlainMember)et).setMemberStatusName((String)vl); }
     }
 
     // ===================================================================================
@@ -84,7 +84,7 @@ public class AppPlainMemberDbm extends AbstractDBMeta {
     //                                                                         Column Info
     //                                                                         ===========
     protected final ColumnInfo _columnMemberId = cci("MEMBER_ID", "MEMBER_ID", null, "会員ID", false, "memberId", Integer.class, false, false, "INT", 11, 0, null, false, null, "会員を識別するID。連番として基本的に自動採番される。\n（会員IDだけに限らず）採番方法はDBMSによって変わる。", null, null, null);
-    protected final ColumnInfo _columnMemberName = cci("MEMBER_NAME", "MEMBER_NAME", null, "会員名称", false, "memberName", String.class, false, false, "VARCHAR", 200, 0, null, false, null, "会員のフルネームの名称。", null, null, null);
+    protected final ColumnInfo _columnMemberName = cci("MEMBER_NAME", "MEMBER_NAME", null, "会員名称", false, "memberName", String.class, false, false, "VARCHAR", 180, 0, null, false, null, "会員のフルネームの名称。", null, null, null);
     protected final ColumnInfo _columnMemberStatusName = cci("MEMBER_STATUS_NAME", "MEMBER_STATUS_NAME", null, "会員ステータス名称", false, "memberStatusName", String.class, false, false, "VARCHAR", 50, 0, null, false, null, null, null, null, null);
 
     public ColumnInfo columnMemberId() { return _columnMemberId; }
@@ -149,10 +149,10 @@ public class AppPlainMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                   Map Communication
     //                                                                   =================
-    public void acceptPrimaryKeyMap(Entity e, Map<String, ? extends Object> m)
-    { doAcceptPrimaryKeyMap((AppPlainMember)e, m); }
-    public void acceptAllColumnMap(Entity e, Map<String, ? extends Object> m)
-    { doAcceptAllColumnMap((AppPlainMember)e, m); }
-    public Map<String, Object> extractPrimaryKeyMap(Entity e) { return doExtractPrimaryKeyMap(e); }
-    public Map<String, Object> extractAllColumnMap(Entity e) { return doExtractAllColumnMap(e); }
+    public void acceptPrimaryKeyMap(Entity et, Map<String, ? extends Object> mp)
+    { doAcceptPrimaryKeyMap((AppPlainMember)et, mp); }
+    public void acceptAllColumnMap(Entity et, Map<String, ? extends Object> mp)
+    { doAcceptAllColumnMap((AppPlainMember)et, mp); }
+    public Map<String, Object> extractPrimaryKeyMap(Entity et) { return doExtractPrimaryKeyMap(et); }
+    public Map<String, Object> extractAllColumnMap(Entity et) { return doExtractAllColumnMap(et); }
 }
