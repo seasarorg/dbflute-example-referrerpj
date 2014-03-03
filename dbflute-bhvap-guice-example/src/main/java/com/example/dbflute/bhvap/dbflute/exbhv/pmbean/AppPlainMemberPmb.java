@@ -4,7 +4,7 @@ import com.example.dbflute.bhvap.dbflute.bsbhv.pmbean.BsAppPlainMemberPmb;
 
 /**
  * <!-- df:beginClassDescription -->
- * The simple parameter-bean of AppPlainMember.
+ * The simple parameter-bean of AppPlainMember. <br />
  * <!-- df:endClassDescription -->
  * <p>
  * You can implement your original methods here.
