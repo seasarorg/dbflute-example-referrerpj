@@ -47,14 +47,14 @@ public class DBFluteModuleBhvAp extends DBFluteModule {
             bind(MemberServiceBhvAp.class).toInstance(bhv);
         }
         {
+            MemberStatusBhvAp bhv = new MemberStatusBhvAp();
+            bhv.setBehaviorCommandInvoker(ker); bhv.setBehaviorSelector(tor); bhv.setCommonColumnAutoSetupper(per);
+            bind(MemberStatusBhvAp.class).toInstance(bhv);
+        }
+        {
             MemberWithdrawalBhvAp bhv = new MemberWithdrawalBhvAp();
             bhv.setBehaviorCommandInvoker(ker); bhv.setBehaviorSelector(tor); bhv.setCommonColumnAutoSetupper(per);
             bind(MemberWithdrawalBhvAp.class).toInstance(bhv);
-        }
-        {
-            PurchaseBhvAp bhv = new PurchaseBhvAp();
-            bhv.setBehaviorCommandInvoker(ker); bhv.setBehaviorSelector(tor); bhv.setCommonColumnAutoSetupper(per);
-            bind(PurchaseBhvAp.class).toInstance(bhv);
         }
         {
             ProductBhvAp bhv = new ProductBhvAp();
@@ -72,6 +72,11 @@ public class DBFluteModuleBhvAp extends DBFluteModule {
             bind(ProductStatusBhvAp.class).toInstance(bhv);
         }
         {
+            PurchaseBhvAp bhv = new PurchaseBhvAp();
+            bhv.setBehaviorCommandInvoker(ker); bhv.setBehaviorSelector(tor); bhv.setCommonColumnAutoSetupper(per);
+            bind(PurchaseBhvAp.class).toInstance(bhv);
+        }
+        {
             RegionBhvAp bhv = new RegionBhvAp();
             bhv.setBehaviorCommandInvoker(ker); bhv.setBehaviorSelector(tor); bhv.setCommonColumnAutoSetupper(per);
             bind(RegionBhvAp.class).toInstance(bhv);
@@ -82,14 +87,9 @@ public class DBFluteModuleBhvAp extends DBFluteModule {
             bind(ServiceRankBhvAp.class).toInstance(bhv);
         }
         {
-            MemberStatusBhvAp bhv = new MemberStatusBhvAp();
+            SummaryProductBhvAp bhv = new SummaryProductBhvAp();
             bhv.setBehaviorCommandInvoker(ker); bhv.setBehaviorSelector(tor); bhv.setCommonColumnAutoSetupper(per);
-            bind(MemberStatusBhvAp.class).toInstance(bhv);
-        }
-        {
-            WithdrawalReasonBhvAp bhv = new WithdrawalReasonBhvAp();
-            bhv.setBehaviorCommandInvoker(ker); bhv.setBehaviorSelector(tor); bhv.setCommonColumnAutoSetupper(per);
-            bind(WithdrawalReasonBhvAp.class).toInstance(bhv);
+            bind(SummaryProductBhvAp.class).toInstance(bhv);
         }
         {
             VendorCheckBhvAp bhv = new VendorCheckBhvAp();
@@ -97,9 +97,9 @@ public class DBFluteModuleBhvAp extends DBFluteModule {
             bind(VendorCheckBhvAp.class).toInstance(bhv);
         }
         {
-            SummaryProductBhvAp bhv = new SummaryProductBhvAp();
+            WithdrawalReasonBhvAp bhv = new WithdrawalReasonBhvAp();
             bhv.setBehaviorCommandInvoker(ker); bhv.setBehaviorSelector(tor); bhv.setCommonColumnAutoSetupper(per);
-            bind(SummaryProductBhvAp.class).toInstance(bhv);
+            bind(WithdrawalReasonBhvAp.class).toInstance(bhv);
         }
     }
 }
