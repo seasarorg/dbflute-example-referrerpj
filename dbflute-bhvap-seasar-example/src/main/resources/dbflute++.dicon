@@ -39,6 +39,7 @@
     <component name="whiteCompoundPkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundPkBhvAp"/>
     <component name="whiteCompoundPkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundPkRefBhvAp"/>
     <component name="whiteCompoundPkRefNestBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundPkRefNestBhvAp"/>
+    <component name="whiteDateAdjustmentBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDateAdjustmentBhvAp"/>
     <component name="whiteDbCommentBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDbCommentBhvAp"/>
     <component name="whiteDelimiterBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDelimiterBhvAp"/>
     <component name="whiteDeprecatedClsElementBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDeprecatedClsElementBhvAp"/>
@@ -58,6 +59,7 @@
     <component name="whiteNoPkRelationBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteNoPkRelationBhvAp"/>
     <component name="whitePgReservBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePgReservBhvAp"/>
     <component name="whitePgReservRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePgReservRefBhvAp"/>
+    <component name="whitePointTypeMappingBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePointTypeMappingBhvAp"/>
     <component name="whitePurchaseReferrerBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePurchaseReferrerBhvAp"/>
     <component name="whiteQuotedBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteQuotedBhvAp"/>
     <component name="whiteQuotedRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteQuotedRefBhvAp"/>
