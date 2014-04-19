@@ -38,7 +38,10 @@
     <component name="whiteColumnExceptGenOnlyBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteColumnExceptGenOnlyBhvAp"/>
     <component name="whiteCompoundPkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundPkBhvAp"/>
     <component name="whiteCompoundPkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundPkRefBhvAp"/>
+    <component name="whiteCompoundPkRefManyBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundPkRefManyBhvAp"/>
     <component name="whiteCompoundPkRefNestBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundPkRefNestBhvAp"/>
+    <component name="whiteCompoundReferredNormallyBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundReferredNormallyBhvAp"/>
+    <component name="whiteCompoundReferredPrimaryBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteCompoundReferredPrimaryBhvAp"/>
     <component name="whiteDateAdjustmentBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDateAdjustmentBhvAp"/>
     <component name="whiteDbCommentBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDbCommentBhvAp"/>
     <component name="whiteDelimiterBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDelimiterBhvAp"/>
