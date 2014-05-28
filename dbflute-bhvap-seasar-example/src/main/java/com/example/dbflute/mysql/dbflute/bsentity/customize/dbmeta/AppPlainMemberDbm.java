@@ -48,14 +48,15 @@ public class AppPlainMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                    Property Gateway
     //                                                                    ================
+    // -----------------------------------------------------
+    //                                       Column Property
+    //                                       ---------------
     protected final Map<String, PropertyGateway> _epgMap = newHashMap();
     {
         setupEpg(_epgMap, new EpgMemberId(), "memberId");
         setupEpg(_epgMap, new EpgMemberName(), "memberName");
         setupEpg(_epgMap, new EpgMemberStatusName(), "memberStatusName");
     }
-    public PropertyGateway findPropertyGateway(String propertyName)
-    { return doFindEpg(_epgMap, propertyName); }
     public static class EpgMemberId implements PropertyGateway {
         public Object read(Entity et) { return ((AppPlainMember)et).getMemberId(); }
         public void write(Entity et, Object vl) { ((AppPlainMember)et).setMemberId(cti(vl)); }
@@ -68,6 +69,8 @@ public class AppPlainMemberDbm extends AbstractDBMeta {
         public Object read(Entity et) { return ((AppPlainMember)et).getMemberStatusName(); }
         public void write(Entity et, Object vl) { ((AppPlainMember)et).setMemberStatusName((String)vl); }
     }
+    public PropertyGateway findPropertyGateway(String prop)
+    { return doFindEpg(_epgMap, prop); }
 
     // ===================================================================================
     //                                                                          Table Info
@@ -83,12 +86,24 @@ public class AppPlainMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                         Column Info
     //                                                                         ===========
-    protected final ColumnInfo _columnMemberId = cci("MEMBER_ID", "MEMBER_ID", null, "会員ID", false, "memberId", Integer.class, false, false, "INT", 11, 0, null, false, null, "会員を識別するID。連番として基本的に自動採番される。\n（会員IDだけに限らず）採番方法はDBMSによって変わる。", null, null, null);
-    protected final ColumnInfo _columnMemberName = cci("MEMBER_NAME", "MEMBER_NAME", null, "会員名称", false, "memberName", String.class, false, false, "VARCHAR", 180, 0, null, false, null, "会員のフルネームの名称。", null, null, null);
-    protected final ColumnInfo _columnMemberStatusName = cci("MEMBER_STATUS_NAME", "MEMBER_STATUS_NAME", null, "会員ステータス名称", false, "memberStatusName", String.class, false, false, "VARCHAR", 50, 0, null, false, null, null, null, null, null);
+    protected final ColumnInfo _columnMemberId = cci("MEMBER_ID", "MEMBER_ID", null, "会員ID", Integer.class, "memberId", null, false, false, false, "INT", 11, 0, null, false, null, "会員を識別するID。連番として基本的に自動採番される。\n（会員IDだけに限らず）採番方法はDBMSによって変わる。", null, null, null);
+    protected final ColumnInfo _columnMemberName = cci("MEMBER_NAME", "MEMBER_NAME", null, "会員名称", String.class, "memberName", null, false, false, false, "VARCHAR", 180, 0, null, false, null, "会員のフルネームの名称。", null, null, null);
+    protected final ColumnInfo _columnMemberStatusName = cci("MEMBER_STATUS_NAME", "MEMBER_STATUS_NAME", null, "会員ステータス名称", String.class, "memberStatusName", null, false, false, false, "VARCHAR", 50, 0, null, false, null, null, null, null, null);
 
+    /**
+     * (会員ID)MEMBER_ID: {INT(11), refers to member.MEMBER_ID}
+     * @return The information object of specified column. (NotNull)
+     */
     public ColumnInfo columnMemberId() { return _columnMemberId; }
+    /**
+     * (会員名称)MEMBER_NAME: {VARCHAR(180), refers to member.MEMBER_NAME}
+     * @return The information object of specified column. (NotNull)
+     */
     public ColumnInfo columnMemberName() { return _columnMemberName; }
+    /**
+     * (会員ステータス名称)MEMBER_STATUS_NAME: {VARCHAR(50), refers to member_status.MEMBER_STATUS_NAME}
+     * @return The information object of specified column. (NotNull)
+     */
     public ColumnInfo columnMemberStatusName() { return _columnMemberStatusName; }
 
     protected List<ColumnInfo> ccil() {
@@ -116,6 +131,8 @@ public class AppPlainMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                       Relation Info
     //                                                                       =============
+    // cannot cache because it uses related DB meta instance while booting
+    // (instead, cached by super's collection)
     // -----------------------------------------------------
     //                                      Foreign Property
     //                                      ----------------

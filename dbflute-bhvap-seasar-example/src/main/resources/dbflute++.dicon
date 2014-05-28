@@ -54,12 +54,15 @@
     <component name="whiteImplicitReverseFkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitReverseFkBhvAp"/>
     <component name="whiteImplicitReverseFkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitReverseFkRefBhvAp"/>
     <component name="whiteImplicitReverseFkSuppressBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitReverseFkSuppressBhvAp"/>
+    <component name="whiteIncludeQueryBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteIncludeQueryBhvAp"/>
     <component name="whiteLineSepCommentBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteLineSepCommentBhvAp"/>
     <component name="whiteLoadDataBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteLoadDataBhvAp"/>
     <component name="whiteMyselfBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteMyselfBhvAp"/>
     <component name="whiteMyselfCheckBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteMyselfCheckBhvAp"/>
     <component name="whiteNoPkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteNoPkBhvAp"/>
     <component name="whiteNoPkRelationBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteNoPkRelationBhvAp"/>
+    <component name="whiteOnlyOneToOneFromBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteOnlyOneToOneFromBhvAp"/>
+    <component name="whiteOnlyOneToOneToBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteOnlyOneToOneToBhvAp"/>
     <component name="whitePgReservBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePgReservBhvAp"/>
     <component name="whitePgReservRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePgReservRefBhvAp"/>
     <component name="whitePointTypeMappingBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePointTypeMappingBhvAp"/>
@@ -73,8 +76,15 @@
     <component name="whiteSplitMultipleFkNextBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSplitMultipleFkNextBhvAp"/>
     <component name="whiteSplitMultipleFkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSplitMultipleFkRefBhvAp"/>
     <component name="whiteSuppressDefCheckBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressDefCheckBhvAp"/>
+    <component name="whiteSuppressJoinSqBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressJoinSqBhvAp"/>
+    <component name="whiteSuppressJoinSqManyBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressJoinSqManyBhvAp"/>
+    <component name="whiteSuppressJoinSqManyOneBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressJoinSqManyOneBhvAp"/>
+    <component name="whiteSuppressJoinSqManyOneOneBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressJoinSqManyOneOneBhvAp"/>
+    <component name="whiteSuppressJoinSqOneBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressJoinSqOneBhvAp"/>
+    <component name="whiteSuppressJoinSqOneAddiBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressJoinSqOneAddiBhvAp"/>
     <component name="whiteTableExceptGenHeadBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteTableExceptGenHeadBhvAp"/>
     <component name="whiteTableExceptGenRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteTableExceptGenRefBhvAp"/>
+    <component name="whiteUqClassificationBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqClassificationBhvAp"/>
     <component name="whiteUqFkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkBhvAp"/>
     <component name="whiteUqFkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkRefBhvAp"/>
     <component name="whiteUqFkRefNestBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkRefNestBhvAp"/>
