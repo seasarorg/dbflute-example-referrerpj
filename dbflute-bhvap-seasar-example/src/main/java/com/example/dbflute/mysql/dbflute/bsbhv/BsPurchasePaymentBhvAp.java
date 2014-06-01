@@ -15,10 +15,10 @@
  */
 package com.example.dbflute.mysql.dbflute.bsbhv;
 
-import com.example.dbflute.mysql.dbflute.exbhv.WithdrawalReasonBhv;
+import com.example.dbflute.mysql.dbflute.exbhv.PurchasePaymentBhv;
 
 /**
- * The base behavior of withdrawal_reason as implementation of an application.
+ * The base behavior of purchase_payment as implementation of an application.
  * <p>
  * You can NOT implement your original methods here.
  * This class is overridden when re-generating.
@@ -26,7 +26,7 @@ import com.example.dbflute.mysql.dbflute.exbhv.WithdrawalReasonBhv;
  * </p>
  * @author DBFlute(AutoGenerator)
  */
-public class BsWithdrawalReasonBhvAp extends WithdrawalReasonBhv {
+public class BsPurchasePaymentBhvAp extends PurchasePaymentBhv {
 
     // ===================================================================================
     //                                                                          Definition
