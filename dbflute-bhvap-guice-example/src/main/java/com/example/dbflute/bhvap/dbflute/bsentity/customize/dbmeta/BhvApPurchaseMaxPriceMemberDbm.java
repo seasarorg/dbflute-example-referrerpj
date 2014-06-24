@@ -157,7 +157,7 @@ public class BhvApPurchaseMaxPriceMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                     Object Instance
     //                                                                     ===============
-    public Entity newEntity() { return newMyEntity(); }
+    public BhvApPurchaseMaxPriceMember newEntity() { return new BhvApPurchaseMaxPriceMember(); }
     public BhvApPurchaseMaxPriceMember newMyEntity() { return new BhvApPurchaseMaxPriceMember(); }
 
     // ===================================================================================
