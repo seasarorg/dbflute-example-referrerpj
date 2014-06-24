@@ -169,8 +169,7 @@ public class SqlApCursorMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                     Object Instance
     //                                                                     ===============
-    public Entity newEntity() { return newMyEntity(); }
-    public SqlApCursorMember newMyEntity() { return new SqlApCursorMember(); }
+    public SqlApCursorMember newEntity() { return new SqlApCursorMember(); }
 
     // ===================================================================================
     //                                                                   Map Communication

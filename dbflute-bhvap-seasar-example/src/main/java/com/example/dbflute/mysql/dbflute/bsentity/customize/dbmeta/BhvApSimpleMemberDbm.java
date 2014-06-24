@@ -172,7 +172,7 @@ public class BhvApSimpleMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                     Object Instance
     //                                                                     ===============
-    public Entity newEntity() { return newMyEntity(); }
+    public BhvApSimpleMember newEntity() { return new BhvApSimpleMember(); }
     public BhvApSimpleMember newMyEntity() { return new BhvApSimpleMember(); }
 
     // ===================================================================================

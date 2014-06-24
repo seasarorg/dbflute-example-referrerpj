@@ -20,8 +20,8 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Set;
 
-import org.seasar.dbflute.dbmeta.DBMeta;
 import org.seasar.dbflute.Entity;
+import org.seasar.dbflute.dbmeta.DBMeta;
 import com.example.dbflute.mysql.dbflute.exentity.customize.*;
 
 /**
@@ -325,7 +325,7 @@ public abstract class BsAppPlainMember implements Entity, Serializable, Cloneabl
      */
     public void setMemberId(Integer memberId) {
         __modifiedProperties.addPropertyName("memberId");
-        this._memberId = memberId;
+        _memberId = memberId;
     }
 
     /**
@@ -344,7 +344,7 @@ public abstract class BsAppPlainMember implements Entity, Serializable, Cloneabl
      */
     public void setMemberName(String memberName) {
         __modifiedProperties.addPropertyName("memberName");
-        this._memberName = memberName;
+        _memberName = memberName;
     }
 
     /**
@@ -361,6 +361,6 @@ public abstract class BsAppPlainMember implements Entity, Serializable, Cloneabl
      */
     public void setMemberStatusName(String memberStatusName) {
         __modifiedProperties.addPropertyName("memberStatusName");
-        this._memberStatusName = memberStatusName;
+        _memberStatusName = memberStatusName;
     }
 }

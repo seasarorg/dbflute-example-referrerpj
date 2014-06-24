@@ -145,7 +145,7 @@ public class AppPlainMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                     Object Instance
     //                                                                     ===============
-    public Entity newEntity() { return newMyEntity(); }
+    public AppPlainMember newEntity() { return new AppPlainMember(); }
     public AppPlainMember newMyEntity() { return new AppPlainMember(); }
 
     // ===================================================================================

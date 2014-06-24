@@ -21,8 +21,8 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.Date;
 
-import org.seasar.dbflute.dbmeta.DBMeta;
 import org.seasar.dbflute.Entity;
+import org.seasar.dbflute.dbmeta.DBMeta;
 import com.example.dbflute.mysql.dbflute.exentity.customize.*;
 
 /**
@@ -340,7 +340,7 @@ public abstract class BsBhvApSimpleMember implements Entity, Serializable, Clone
      */
     public void setMemberId(Integer memberId) {
         __modifiedProperties.addPropertyName("memberId");
-        this._memberId = memberId;
+        _memberId = memberId;
     }
 
     /**
@@ -359,7 +359,7 @@ public abstract class BsBhvApSimpleMember implements Entity, Serializable, Clone
      */
     public void setMemberName(String memberName) {
         __modifiedProperties.addPropertyName("memberName");
-        this._memberName = memberName;
+        _memberName = memberName;
     }
 
     /**
@@ -378,7 +378,7 @@ public abstract class BsBhvApSimpleMember implements Entity, Serializable, Clone
      */
     public void setBirthdate(java.util.Date birthdate) {
         __modifiedProperties.addPropertyName("birthdate");
-        this._birthdate = birthdate;
+        _birthdate = birthdate;
     }
 
     /**
@@ -395,6 +395,6 @@ public abstract class BsBhvApSimpleMember implements Entity, Serializable, Clone
      */
     public void setMemberStatusName(String memberStatusName) {
         __modifiedProperties.addPropertyName("memberStatusName");
-        this._memberStatusName = memberStatusName;
+        _memberStatusName = memberStatusName;
     }
 }

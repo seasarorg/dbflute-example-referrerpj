@@ -157,8 +157,7 @@ public class SqlApBasicMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                     Object Instance
     //                                                                     ===============
-    public Entity newEntity() { return newMyEntity(); }
-    public SqlApBasicMember newMyEntity() { return new SqlApBasicMember(); }
+    public SqlApBasicMember newEntity() { return new SqlApBasicMember(); }
 
     // ===================================================================================
     //                                                                   Map Communication

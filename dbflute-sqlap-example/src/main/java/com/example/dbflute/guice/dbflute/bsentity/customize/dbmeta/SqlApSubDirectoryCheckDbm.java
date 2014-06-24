@@ -145,8 +145,7 @@ public class SqlApSubDirectoryCheckDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                     Object Instance
     //                                                                     ===============
-    public Entity newEntity() { return newMyEntity(); }
-    public SqlApSubDirectoryCheck newMyEntity() { return new SqlApSubDirectoryCheck(); }
+    public SqlApSubDirectoryCheck newEntity() { return new SqlApSubDirectoryCheck(); }
 
     // ===================================================================================
     //                                                                   Map Communication
