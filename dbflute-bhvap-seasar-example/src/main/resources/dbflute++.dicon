@@ -77,6 +77,8 @@
     <component name="whiteSplitMultipleFkChildBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSplitMultipleFkChildBhvAp"/>
     <component name="whiteSplitMultipleFkNextBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSplitMultipleFkNextBhvAp"/>
     <component name="whiteSplitMultipleFkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSplitMultipleFkRefBhvAp"/>
+    <component name="whiteStilettoAliasBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteStilettoAliasBhvAp"/>
+    <component name="whiteStilettoAliasRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteStilettoAliasRefBhvAp"/>
     <component name="whiteSuppressDefCheckBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressDefCheckBhvAp"/>
     <component name="whiteSuppressJoinSqBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressJoinSqBhvAp"/>
     <component name="whiteSuppressJoinSqManyBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteSuppressJoinSqManyBhvAp"/>
@@ -97,6 +99,7 @@
     <component name="whiteVariantRelationMasterFooBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterFooBhvAp"/>
     <component name="whiteVariantRelationMasterQuxBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterQuxBhvAp"/>
     <component name="whiteVariantRelationReferrerBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationReferrerBhvAp"/>
+    <component name="whiteVariantRelationReferrerRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationReferrerRefBhvAp"/>
     <component name="whiteXlsManBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteXlsManBhvAp"/>
     <component name="nextSchemaProductBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.NextSchemaProductBhvAp"/>
     <component name="whiteAdditionalBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteAdditionalBhvAp"/>

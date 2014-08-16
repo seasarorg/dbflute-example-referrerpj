@@ -9,6 +9,10 @@ import org.seasar.dbflute.cbean.coption.LikeSearchOption;
 import org.seasar.dbflute.util.DfCollectionUtil;
 import org.seasar.dbflute.exception.*;
 import org.seasar.dbflute.util.DfTypeUtil;
+import org.joda.time.LocalDate;
+import org.joda.time.LocalDateTime;
+import org.joda.time.ReadableInstant;
+import org.joda.time.ReadablePartial;
 import com.example.dbflute.guice.dbflute.allcommon.*;
 import com.example.dbflute.guice.dbflute.exbhv.*;
 import com.example.dbflute.guice.dbflute.exentity.customize.*;
@@ -33,7 +37,7 @@ public class BsSqlApBasicMemberPmb implements ListHandlingPmb<MemberBhv, SqlApBa
     protected LikeSearchOption _memberNameInternalLikeSearchOption;
 
     /** The parameter of birthdate. */
-    protected Date _birthdate;
+    protected org.joda.time.LocalDate _birthdate;
 
     /** The max size of safety result. */
     protected int _safetyMaxResultSize;
@@ -125,8 +129,23 @@ public class BsSqlApBasicMemberPmb implements ListHandlingPmb<MemberBhv, SqlApBa
         return DfTypeUtil.toBoolean(obj);
     }
 
-    protected Date toUtilDate(Date date) {
+    protected Date toUtilDate(Object date) {
+        if (date != null && date instanceof ReadablePartial) {
+            return new Date(((ReadablePartial) date).toDateTime(null).getMillis());
+        } else if (date != null && date instanceof ReadableInstant) {
+            return new Date(((ReadableInstant) date).getMillis());
+        }
         return DfTypeUtil.toDate(date); // if sub class, re-create as pure date
+    }
+
+    @SuppressWarnings("unchecked")
+    protected <DATE> DATE toLocalDate(Date date, Class<DATE> localType) {
+        if (LocalDate.class.isAssignableFrom(localType)) {
+            return (DATE)LocalDate.fromDateFields(date);
+        } else if (LocalDateTime.class.isAssignableFrom(localType)) {
+            return (DATE)LocalDateTime.fromDateFields(date);
+        }
+        return null; // unreachable
     }
 
     protected String formatUtilDate(Date date) {
@@ -168,7 +187,7 @@ public class BsSqlApBasicMemberPmb implements ListHandlingPmb<MemberBhv, SqlApBa
         final StringBuilder sb = new StringBuilder();
         sb.append(dm).append(_memberId);
         sb.append(dm).append(_memberName);
-        sb.append(dm).append(formatUtilDate(_birthdate));
+        sb.append(dm).append(_birthdate);
         if (sb.length() > 0) { sb.delete(0, dm.length()); }
         sb.insert(0, "{").append("}");
         return sb.toString();
@@ -179,7 +198,7 @@ public class BsSqlApBasicMemberPmb implements ListHandlingPmb<MemberBhv, SqlApBa
     //                                                                            ========
     /**
      * [get] memberId <br />
-     * @return The value of memberId. (Nullable, NotEmptyString(when String): if empty string, returns null)
+     * @return The value of memberId. (NullAllowed, NotEmptyString(when String): if empty string, returns null)
      */
     public Integer getMemberId() {
         return _memberId;
@@ -195,7 +214,7 @@ public class BsSqlApBasicMemberPmb implements ListHandlingPmb<MemberBhv, SqlApBa
 
     /**
      * [get] memberName:likePrefix <br />
-     * @return The value of memberName. (Nullable, NotEmptyString(when String): if empty string, returns null)
+     * @return The value of memberName. (NullAllowed, NotEmptyString(when String): if empty string, returns null)
      */
     public String getMemberName() {
         return filterStringParameter(_memberName);
@@ -220,17 +239,17 @@ public class BsSqlApBasicMemberPmb implements ListHandlingPmb<MemberBhv, SqlApBa
 
     /**
      * [get] birthdate <br />
-     * @return The value of birthdate. (Nullable, NotEmptyString(when String): if empty string, returns null)
+     * @return The value of birthdate. (NullAllowed, NotEmptyString(when String): if empty string, returns null)
      */
-    public Date getBirthdate() {
-        return toUtilDate(_birthdate);
+    public org.joda.time.LocalDate getBirthdate() {
+        return _birthdate;
     }
 
     /**
      * [set] birthdate <br />
      * @param birthdate The value of birthdate. (NullAllowed)
      */
-    public void setBirthdate(Date birthdate) {
+    public void setBirthdate(org.joda.time.LocalDate birthdate) {
         _birthdate = birthdate;
     }
 }
