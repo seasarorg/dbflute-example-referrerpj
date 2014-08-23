@@ -65,6 +65,11 @@
     <component name="whiteNoPkRelationBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteNoPkRelationBhvAp"/>
     <component name="whiteOnlyOneToOneFromBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteOnlyOneToOneFromBhvAp"/>
     <component name="whiteOnlyOneToOneToBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteOnlyOneToOneToBhvAp"/>
+    <component name="whitePerrottaOverMemberBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePerrottaOverMemberBhvAp"/>
+    <component name="whitePerrottaOverMemberMachoBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePerrottaOverMemberMachoBhvAp"/>
+    <component name="whitePerrottaOverProductBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePerrottaOverProductBhvAp"/>
+    <component name="whitePerrottaOverProductNestedBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePerrottaOverProductNestedBhvAp"/>
+    <component name="whitePerrottaOverTraceBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePerrottaOverTraceBhvAp"/>
     <component name="whitePgReservBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePgReservBhvAp"/>
     <component name="whitePgReservRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePgReservRefBhvAp"/>
     <component name="whitePointTypeMappingBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhitePointTypeMappingBhvAp"/>
