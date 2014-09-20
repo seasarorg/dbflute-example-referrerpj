@@ -49,7 +49,9 @@
     <component name="whiteDeprecatedClsElementBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteDeprecatedClsElementBhvAp"/>
     <component name="whiteEscapedDfpropBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteEscapedDfpropBhvAp"/>
     <component name="whiteEscapedJavaDocBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteEscapedJavaDocBhvAp"/>
+    <component name="whiteEscapedNumberInitialBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteEscapedNumberInitialBhvAp"/>
     <component name="whiteGearedCipherBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteGearedCipherBhvAp"/>
+    <component name="whiteGroupingReferenceBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteGroupingReferenceBhvAp"/>
     <component name="whiteImplicitConvIntegerBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitConvIntegerBhvAp"/>
     <component name="whiteImplicitConvNumericBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitConvNumericBhvAp"/>
     <component name="whiteImplicitConvStringBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteImplicitConvStringBhvAp"/>
@@ -99,6 +101,7 @@
     <component name="whiteUqFkRefNestBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkRefNestBhvAp"/>
     <component name="whiteUqFkWithoutPkBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkWithoutPkBhvAp"/>
     <component name="whiteUqFkWithoutPkRefBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteUqFkWithoutPkRefBhvAp"/>
+    <component name="whiteVariantRelationLocalPkReferrerBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationLocalPkReferrerBhvAp"/>
     <component name="whiteVariantRelationMasterBarBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterBarBhvAp"/>
     <component name="whiteVariantRelationMasterCorgeBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterCorgeBhvAp"/>
     <component name="whiteVariantRelationMasterFooBhvAp" class="com.example.dbflute.mysql.dbflute.exbhv.WhiteVariantRelationMasterFooBhvAp"/>
