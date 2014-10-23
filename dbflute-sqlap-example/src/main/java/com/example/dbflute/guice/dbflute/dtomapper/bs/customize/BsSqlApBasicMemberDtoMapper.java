@@ -162,7 +162,7 @@ public abstract class BsSqlApBasicMemberDtoMapper implements DtoMapper<SqlApBasi
      * @return The determination, true or false.
      */
     protected boolean needsMapping(SqlApBasicMemberDto dto, Object value, String propName) {
-        Set<String> modifiedProperties = dto.modifiedProperties();
+        Set<String> modifiedProperties = dto.mymodifiedProperties();
         if (modifiedProperties.isEmpty()) {
             return isMappingToEntityContainsNull() || value != null;
         }
