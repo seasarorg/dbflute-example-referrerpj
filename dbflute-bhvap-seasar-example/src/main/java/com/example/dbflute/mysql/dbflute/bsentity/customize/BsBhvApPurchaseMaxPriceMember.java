@@ -217,7 +217,7 @@ public abstract class BsBhvApPurchaseMaxPriceMember extends AbstractEntity {
      * @param memberId The value of the column 'MEMBER_ID'. (NullAllowed: null update allowed for no constraint)
      */
     public void setMemberId(Integer memberId) {
-        __modifiedProperties.addPropertyName("memberId");
+        registerModifiedProperty("memberId");
         _memberId = memberId;
     }
 
@@ -237,7 +237,7 @@ public abstract class BsBhvApPurchaseMaxPriceMember extends AbstractEntity {
      * @param memberName The value of the column 'MEMBER_NAME'. (NullAllowed: null update allowed for no constraint)
      */
     public void setMemberName(String memberName) {
-        __modifiedProperties.addPropertyName("memberName");
+        registerModifiedProperty("memberName");
         _memberName = memberName;
     }
 
@@ -255,7 +255,7 @@ public abstract class BsBhvApPurchaseMaxPriceMember extends AbstractEntity {
      * @param purchaseMaxPrice The value of the column 'PURCHASE_MAX_PRICE'. (NullAllowed: null update allowed for no constraint)
      */
     public void setPurchaseMaxPrice(Integer purchaseMaxPrice) {
-        __modifiedProperties.addPropertyName("purchaseMaxPrice");
+        registerModifiedProperty("purchaseMaxPrice");
         _purchaseMaxPrice = purchaseMaxPrice;
     }
 
@@ -273,7 +273,7 @@ public abstract class BsBhvApPurchaseMaxPriceMember extends AbstractEntity {
      * @param memberStatusName The value of the column 'MEMBER_STATUS_NAME'. (NullAllowed: null update allowed for no constraint)
      */
     public void setMemberStatusName(String memberStatusName) {
-        __modifiedProperties.addPropertyName("memberStatusName");
+        registerModifiedProperty("memberStatusName");
         _memberStatusName = memberStatusName;
     }
 }
